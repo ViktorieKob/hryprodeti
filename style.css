@@ -166,7 +166,6 @@ footer {
 
 
 /* mobil*/
-
 @media (max-width: 768px) {
   .bubble-side {
     flex-direction: column;
