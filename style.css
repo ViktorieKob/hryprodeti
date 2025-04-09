@@ -1,0 +1,164 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: #fdfdfd;
+  color: #333;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* změna: centrování */
+  align-items: center;
+  padding: 2rem 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: transparent;
+  gap: 3rem; /* prostor mezi logem a menu */
+}
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 120px; /* ← Tady můžeš změnit výšku např. na 100px */
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.3rem; /* větší text */
+}
+
+
+.nav-links li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+
+.nav-links li a:hover {
+  background-color: #ffe3dc;
+  color: #ff6f61;
+}
+
+
+.hero {
+  padding: 10rem 2rem 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #ff6f61;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.section {
+  width: 100%;
+  padding: 5rem 2rem 3rem;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #ff6f61;
+  text-align: center;
+}
+
+.bubble-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 2rem auto;
+  height: 400px;
+}
+
+
+
+
+.bubble-side .text, .bubble-side .image {
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bubble-side .image {
+  padding: 0;
+}
+
+.bubble-side .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.text h2, .text h3 {
+  margin-bottom: 2rem;
+  color: #ff6f61;
+  font-size: 1.6rem; /* ← přidej nebo uprav tento řádek */
+
+}
+
+.text p {
+  color: #444;
+  line-height: 2;
+  font-size: 1.1rem; /* přidej pro větší nadpisy */
+
+}
+
+
+
+
+.kontakt {
+  text-align: center;
+  background: #ffe3dc;
+  padding: 4rem 2rem;
+  border-radius: 40px;
+  width: 90%;
+  max-width: 800px;
+  margin: 4rem auto 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+}
