@@ -166,48 +166,65 @@ footer {
 
 
 /* mobil*/
-@media (max-width: 768px) {
+/* ---------- RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ ---------- */
+@media screen and (max-width: 768px) {
   .bubble-side {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .bubble-side .image,
-  .bubble-side .text {
-    width: 90%;
+  .bubble-side .text, .bubble-side .image {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
   }
 
   .bubble-side img {
-    width: 100%;
-    max-width: 250px;
+    width: 80%;
     height: auto;
     margin: 0 auto;
+    display: block;
   }
 
+  .bubble-side .text p,
   .bubble-side .text h3 {
-    font-size: 1.2rem;
+    font-size: 16px;
   }
 
-  .bubble-side .text p {
-    font-size: 1rem;
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 
   .navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    padding: 10px 0;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   }
 
-  .nav-links li a {
-    font-size: 1rem;
-    padding: 0.5rem 0.8rem;
+  .logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px;
   }
 
-  .hero h1 {
-    font-size: 2rem;
+  .nav-links {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .hero p {
-    font-size: 1rem;
+  .nav-links a {
+    padding: 6px 10px;
+    border-radius: 20px;
   }
 }
